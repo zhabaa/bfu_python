@@ -2,7 +2,7 @@ def pyramid(n):
     s = [str(x) for x in range(1, n + 1)]
 
     while n > 0:
-        print(' '.join(s[:n]))
+        print(''.join(s[:n]))
         n -= 1
 
 
