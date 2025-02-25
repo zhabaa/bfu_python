@@ -1,4 +1,4 @@
-arr = list(map(str, input().split()))
+arr = input().split()
 
 d = dict()
 
