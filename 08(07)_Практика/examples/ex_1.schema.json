@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Movies Database",
+    "description": "A collection of movies with their cast",
+    "type": "object",
+    "properties": {
+      "movies": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer",
+              "minimum": 1888
+            },
+            "cast": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  }
+                },
+                "required": ["name", "role"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": ["title", "year", "cast"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["movies"],
+    "additionalProperties": false
+  }
