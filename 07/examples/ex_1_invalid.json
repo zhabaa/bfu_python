@@ -1,0 +1,33 @@
+{
+    "movies": [
+      {
+        "title": "The Matrix",
+        "year": "1999",
+        "cast": [
+          {
+            "name": "Keanu Reeves",
+            "role": "Neo"
+          },
+          {
+            "name": "Laurence Fishburne"
+          },
+          {
+            "name": "Carrie-Anne Moss",
+            "role": "Trinity",
+            "age": 53
+          }
+        ]
+      },
+      {
+        "title": "Lord of the Rings",
+        "cast": [
+          {
+            "name": "Elijah Wood",
+            "role": "Frodo"
+          }
+        ],
+        "rating": 8.8
+      }
+    ],
+    "total": 2
+  }
